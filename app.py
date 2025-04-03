@@ -18,6 +18,9 @@ class BookStore(db.Model):
     author = db.Column(db.String(50),nullable=False)
     year = db.Column(db.Integer,nullable=False)
 
+@app.route("/")
+def home():
+     return jsonify({"message":"Welcome to the Basic Library API.Check /book/1 or /books for list of books"})
 # Route to get all the data
 @app.route("/books",methods=["GET"])
 def getbooks():
