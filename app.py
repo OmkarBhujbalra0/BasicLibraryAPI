@@ -23,6 +23,11 @@ class BookStore(db.Model):
 @app.route("/")
 def home():
      return render_template("index.html")
+
+@app.route("/docs")
+def docs():
+     return 'This is Docs'
+
 # Route to get all the data
 @app.route("/books",methods=["GET"])
 def getbooks():

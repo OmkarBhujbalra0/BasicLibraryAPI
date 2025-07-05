@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="icon" href="{{url_for('static',filename='BLAPI (1).png')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
     <title>Basic Library API</title>
 </head>
+
 <body>
-    <h1>Welcome to Basic Library API</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><span class="highlight-char">B</span>asic<span class="highlight-char">L</span>ib<span class="highlight-char">API</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Docs</a>
+                    <a class="nav-link active" href="#">Features</a>
+                    <a class="nav-link active" href="#">Pricing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Welcome to <span class="hero-header"><span class="highlight-char">B</span>asic<span class="highlight-char">L</span>ib<span class="highlight-char">API</span></span></h1>
+    <p>Learn how HTTP requests works through this Library API</p>
+    <div class="buttonous"><a href="https://web.postman.co/" target="_blank"><button class="hero-button" >Test It On Postman !</button></a></div>
     <br>
-    <h2>Check the API <a href="/apidocs">DOCS</a></h2>
+    <p class="docs-line">Check out the Docs before Testing.</p>
+    <a href="#about-section"><i class="bi bi-chevron-down"></i></a>
+    <section class="about" id="about-section">
+        <h3>What is BasicLibAPI?</h3>
+        <p class="about-para">BasicLibAPI is an <span class="cap-bold">REST</span>(<span class="cap-bold">Re</span>presentational <span class="cap-bold">S</span>tate <span class="cap-bold">T</span>ransfer) API with the help of which you can learn about basic <span class="cap-bold">CRUD</span> (<span class="cap-bold">C</span>reate , <span class="cap-bold">R</span>ead , <span class="cap-bold">U</span>pdate , <span class="cap-bold">D</span>elete) operations. Using BasicLibAPI you will learn how to use HTTP Requests ( GET,PUT,POST,DELETE ). Learn operating elements on API like managing books in Library.</p>
+        <h5>No Sign Up Required!</h5>
+    </section>
+    <footer class="foot">
+        <a href="#" class="up-icon">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
