@@ -1,7 +1,25 @@
-This is Basic Library API Project developed using Python,Flask and SQlAlchemy,Dockerized using Docker and tested on Postman.
+# **BasicLibAPI**
 
-Docs generated using Flasgger.
+Presenting BasicLibAPI,an REST API through which you can learn how to use HTTP Requests.
+Learn HTTP Requests like you are interacting with books in the library.
 
-This API performs CRUD Operations like Adding,Updating,Fetching and Deleting the Books.
+[image]
 
-Works on 4 Requests: GET, POST, DELETE and PUT.
+Check out the Docs Section of the BasicLibAPI before testing it on Postman.
+
+## Features:
+- Performs CRUD Operations
+- HTTP Requests like GET,POST,PUT,DELETE
+
+[image]
+
+## Tech Stack:
+- Python 3
+- Flask
+- SQLAlchemy
+- Docker
+- Bootstrap
+
+
+
+
